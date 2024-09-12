@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Section</title>
+    <!-- Link ke Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: rgb(136, 134, 132);
+        }
+        
+        .card {
+            width: 50rem;
+            height: 40rem;
+        }
+
+        .centered-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            margin-top: -50px; 
+        }
+
+        .img-small {
+            width: 25%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .btn-custom {
+            --bs-btn-bg: var(black); 
+            --bs-btn-color: white; 
+            transition: background-color 0.3s, color 0.3s; 
+        }
+        .btn-custom.clicked {
+            --bs-btn-bg: yellow; 
+            --bs-btn-color: black 
+        }
+    </style>
+</head>
+
+<body>
+    <section class="login">
+        <div class="d-flex justify-content-center align-items-center vh-100">
+            <div class="card">
+                <div class="card-body text-center">
+                    <img src="../assets/8.png" class="img-small" alt="Logo" />
+                    <div class="container centered-text">
+                <p>
+                    detikNetwork adalah bagian dari CT Corp.
+                </p>
+                <br />
+
+                <p>
+                    Satu akun <a href="https://connect.detik.com/privacy-policy">MPC</a> untuk beraktivitas di semua
+                    layanan CT Corp dan Allo Bank.
+                </p>
+                <a href="https://connect.detik.com/privacy-">Pelajari lebih lanjut.</a>
+
+                    <!-- Tambahkan class untuk tombol -->
+                    <button type="button" class="btn btn-warning"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                       BUAT AKUN MPC
+                    </button>
+                    <button type="button" class="btn btn-outline-warning"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        LOGIN
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Link ke Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   
+</body>
+
+</html>
